@@ -105,6 +105,9 @@ export default function App() {
           // flex: 1
           width: 100,
           height: 100
+          // top: 20,
+          // left: 20,
+          // position: "absolute"
         }}
       />
       <View

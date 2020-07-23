@@ -80,7 +80,7 @@ export default function App() {
           backgroundColor: "gold",
           //  flex: 1
           width: 100,
-          height: 200
+          height: 100
         }}
       />
       <View
@@ -88,7 +88,23 @@ export default function App() {
           backgroundColor: "plum",
           // flex: 1
           width: 100,
-          height: 300
+          height: 100
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "turquoise",
+          // flex: 1
+          width: 100,
+          height: 100
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "magenta",
+          // flex: 1
+          width: 100,
+          height: 100
         }}
       />
     </View>

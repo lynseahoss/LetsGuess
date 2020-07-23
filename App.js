@@ -73,13 +73,15 @@ export default function App() {
       }}
     >
       <View
-        style={{
-          backgroundColor: "pink",
-          //flex: 2
-          width: 100,
-          height: 100
-          // alignSelf: "flex-start"
-        }}
+      // style={{
+      //   backgroundColor: "pink",
+      //   flexBasis: 2,
+      //   flexGrow:1,
+      //   flexShrink: 1,
+      //   width: 100,
+      //   height: 100,
+      //  alignSelf: "flex-start"
+      // }}
       />
       <View
         style={{
@@ -90,12 +92,12 @@ export default function App() {
         }}
       />
       <View
-        style={{
-          backgroundColor: "plum",
-          // flex: 1
-          width: 100,
-          height: 100
-        }}
+      // style={{
+      //   backgroundColor: "plum",
+      //  flex: 1,
+      //   width: 100,
+      //   height: 100
+      // }}
       />
       <View
         style={{

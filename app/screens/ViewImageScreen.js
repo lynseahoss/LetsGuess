@@ -1,11 +1,34 @@
 import React from 'react';
+import { Image, StyleSheet, View } from 'react-native';
 
-const ViewImageScreen = () => {
+const ViewImageScreen = (props) => {
     return (
-        <div>
-            
-        </div>
-    );
+        <View style={style.container}>
+        <View style={style.closeIcon}></View>
+        <View style={style.deleteIcon}></View>
+        <Image 
+        resizeMode='contain'
+        style={styles.image}
+        source={'...'}/>
+        </View>
+        );
 }
-
+const styles = StyleSheet.create({
+   closeIcon:{
+       width:50,
+       height:50,
+       backgroundColor:'pink',
+       position:'absolute',
+       top: 40,
+       left:30,
+   },
+    container:{
+        backgroundColor:'#000',
+        flex:1,
+    },
+    image: {
+        width:'100%',
+        height: '100%',
+    }
+})
 export default ViewImageScreen;

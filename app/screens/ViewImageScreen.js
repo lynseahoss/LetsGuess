@@ -1,44 +1,45 @@
-import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import React from "react";
+import { Image, StyleSheet, View } from "react-native";
 
-import colors from '../config/colors';
+import colors from "../config/colors";
 
-const ViewImageScreen = (props) => {
-    return (
-        <View style={style.container}>
-        <View style={style.closeIcon}></View>
-        <View style={style.deleteIcon}></View>
-        <Image 
-        resizeMode='contain'
+const ViewImageScreen = props => {
+  return (
+    <View style={style.container}>
+      <View style={style.closeIcon}></View>
+      <View style={style.deleteIcon}></View>
+      <Image
+        resizeMode="contain"
         style={styles.image}
-        source={'...'}/>
-        </View>
-        );
-}
+        source={"./assets/LetsGuessHomeImg.png"}
+      />
+    </View>
+  );
+};
 const styles = StyleSheet.create({
-   closeIcon:{
-       width:50,
-       height:50,
-       backgroundColor: colors.turquoise,
-       position:'absolute',
-       top: 40,
-       left:30,
-   },
-    container:{
-        backgroundColor:colors.black,
-        flex:1,
-    },
-    deleteIcon:{
-        width:50,
-        height:50,
-        backgroundColor:colors.gold,
-        position:'absolute',
-        top: 40,
-        right:30,
-    },
-    image: {
-        width:'100%',
-        height: '100%',
-    }
-})
+  closeIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: colors.turquoise,
+    position: "absolute",
+    top: 40,
+    left: 30
+  },
+  container: {
+    backgroundColor: colors.black,
+    flex: 1
+  },
+  deleteIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: colors.gold,
+    position: "absolute",
+    top: 40,
+    right: 30
+  },
+  image: {
+    width: "100%",
+    height: "100%"
+  }
+});
 export default ViewImageScreen;

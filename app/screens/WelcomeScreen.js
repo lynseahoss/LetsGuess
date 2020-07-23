@@ -6,9 +6,11 @@ const welcomeScreen = (props)=>{
        style={styles.background}
        source={require("...")}
        >
+           <View style={styles.logoContainer}>
     {/* logo in image tag */}
            <Image style={styles.logo}source={require("...")}/> 
            <Text>Guess that Character</Text>
+           </View>
            <View style={styles.loginBtn}></View>
            <View style={styles.registerBtn}></View>
        </ImageBackground>
@@ -29,11 +31,10 @@ const welcomeScreen = (props)=>{
             logo:{
                 width:100,
                 height:100,
+            },
+            logo:{
                 position: 'absolute',
                 top: 70,
-
-
-
             },
             registerBtn: {
             width: "25%",

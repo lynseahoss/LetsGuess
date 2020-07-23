@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
     deleteIcon:{
         width:50,
         height:50,
-        backgroundColor:'pink',
+        backgroundColor:'gold',
         position:'absolute',
         top: 40,
-        left:30,
+        right:30,
     },
     image: {
         width:'100%',

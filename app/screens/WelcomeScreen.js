@@ -32,9 +32,10 @@ const welcomeScreen = (props)=>{
                 width:100,
                 height:100,
             },
-            logo:{
+            logoContainer:{
                 position: 'absolute',
                 top: 70,
+                alignItems:'center',
             },
             registerBtn: {
             width: "25%",

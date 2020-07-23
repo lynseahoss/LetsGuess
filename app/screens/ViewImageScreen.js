@@ -19,19 +19,19 @@ const styles = StyleSheet.create({
    closeIcon:{
        width:50,
        height:50,
-       backgroundColor: colors.primary,
+       backgroundColor: colors.turquoise,
        position:'absolute',
        top: 40,
        left:30,
    },
     container:{
-        backgroundColor:'#000',
+        backgroundColor:colors.black,
         flex:1,
     },
     deleteIcon:{
         width:50,
         height:50,
-        backgroundColor:colors.secondary,
+        backgroundColor:colors.gold,
         position:'absolute',
         top: 40,
         right:30,

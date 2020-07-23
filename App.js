@@ -59,11 +59,17 @@ export default function App() {
         // justifyContent: "space-evenly"
         // justifyContent: "space-between"
 
-        alignItems: "center"
+        alignItems: "center",
         // alignItems: "baseline"
         //alignItems: "flex-end"
         // alignItems: "flex-start"
         // alignItems: "stretch"
+
+        alignContent: "center",
+
+        flexWrap: "wrap"
+        // flexWrap: "nowrap"
+        // flexWrap: "wrap-reverse"
       }}
     >
       <View

@@ -75,53 +75,6 @@ export default function App() {
         // flexWrap: "wrap-reverse"
       }}
     >
-      <View
-      // style={{
-      //   backgroundColor: "pink",
-      //   flexBasis: 2,
-      //   flexGrow:1,
-      //   flexShrink: 1,
-      //   width: 100,
-      //   height: 100,
-      //  alignSelf: "flex-start"
-      // }}
-      />
-      <View
-      // style={{
-      //   backgroundColor: "gold",
-      //   //  flex: 1
-      //   width: 100,
-      //   height: 100
-      // }}
-      />
-      <View
-      // style={{
-      //   backgroundColor: "plum",
-      //  flex: 1,
-      //   width: 100,
-      //   height: 100
-      // }}
-      />
-      <View
-      // style={{
-      //   backgroundColor: "turquoise",
-      //   // flex: 1
-      //   width: 100,
-      //   height: 100
-      //   // top: 20,
-      //   // left: 20,
-      //   // position: "absolute"
-      // }}
-      />
-      <View
-      // style={{
-      //   backgroundColor: "magenta",
-      //   // flex: 1
-      //   width: 100,
-      //   height: 100
-      // }}
-      />
-
       <SafeAreaView style={styles.container}>
         <View style={styles1.container}>
           <TouchableWithoutFeedback
@@ -129,7 +82,7 @@ export default function App() {
           >
             <Image
               style={styles1.logo}
-              source={require("./assets/LetsGuessHomeImg.png")}
+              source={require("./app/assets/LetsGuessHomeImg.png")}
             />
           </TouchableWithoutFeedback>
         </View>

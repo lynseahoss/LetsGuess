@@ -26,6 +26,14 @@ const styles = StyleSheet.create({
         backgroundColor:'#000',
         flex:1,
     },
+    deleteIcon:{
+        width:50,
+        height:50,
+        backgroundColor:'pink',
+        position:'absolute',
+        top: 40,
+        left:30,
+    },
     image: {
         width:'100%',
         height: '100%',

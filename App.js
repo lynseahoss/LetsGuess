@@ -26,21 +26,24 @@ export default function App() {
   // x.toString();
   //to debug in chrome press esc btn in the simulator when red box appears then bring up dev menu ctrl d cmd d then click debug remote js
 
-  // const handlePress = () => console.log("asset pressed");
-  // const styles1 = StyleSheet.create({
-  //   container: {
-  //     paddingTop: 10
-  //   },
-  //   tinyLogo: {
-  //     width: 50,
-  //     height: 50
-  //   },
-  //   logo: {
-  //     width: 400,
-  //     height: 300,
-  //     resizeMode: "stretch"
-  //   }
-  // });
+  const handlePress = () => console.log("asset pressed");
+  const styles1 = StyleSheet.create({
+    container: {
+      paddingTop: 10
+    },
+    tinyLogo: {
+      width: 50,
+      height: 50
+    },
+    logo: {
+      width: 400,
+      height: 300,
+      resizeMode: "stretch",
+      justifyContent: "center",
+      alignItems: "center",
+      alignContent: "center"
+    }
+  });
   //const { landscape } = useDeviceOrientation();
   return (
     <View
@@ -84,12 +87,12 @@ export default function App() {
       // }}
       />
       <View
-        style={{
-          backgroundColor: "gold",
-          //  flex: 1
-          width: 100,
-          height: 100
-        }}
+      // style={{
+      //   backgroundColor: "gold",
+      //   //  flex: 1
+      //   width: 100,
+      //   height: 100
+      // }}
       />
       <View
       // style={{
@@ -100,58 +103,48 @@ export default function App() {
       // }}
       />
       <View
-        style={{
-          backgroundColor: "turquoise",
-          // flex: 1
-          width: 100,
-          height: 100
-          // top: 20,
-          // left: 20,
-          // position: "absolute"
-        }}
+      // style={{
+      //   backgroundColor: "turquoise",
+      //   // flex: 1
+      //   width: 100,
+      //   height: 100
+      //   // top: 20,
+      //   // left: 20,
+      //   // position: "absolute"
+      // }}
       />
       <View
-        style={{
-          backgroundColor: "magenta",
-          // flex: 1
-          width: 100,
-          height: 100
-        }}
+      // style={{
+      //   backgroundColor: "magenta",
+      //   // flex: 1
+      //   width: 100,
+      //   height: 100
+      // }}
       />
+
+      <SafeAreaView style={styles.container}>
+        <View style={styles1.container}>
+          <TouchableWithoutFeedback
+            onPress={() => console.log("sprrrrrinkles")}
+          >
+            <Image
+              style={styles1.logo}
+              source={require("./assets/LetsGuessHomeImg.png")}
+            />
+          </TouchableWithoutFeedback>
+        </View>
+        <StatusBar style="auto" />
+      </SafeAreaView>
     </View>
-
-    // <SafeAreaView style={styles.container}>
-    //   <View
-    //     style={{
-    //       backgroundColor: "pink",
-    //       width: "100%",
-    //       // height: landscape ? "100%" : "30%"
-    //       height: "30%"
-    //     }}
-    //   ></View>
-
-    //* <Text numberOfLines={1} onPress={handlePress}>
-    // Sprinkles!
-    //</Text>
-    //  <View style={styles1.container}>
-    // <TouchableWithoutFeedback onPress={() => console.log("sprrrrrinkles")}>
-    // <Image
-    // style={styles1.logo}
-    // source={require("./assets/LetsGuessHomeImg.png")}
-    // />
-    // </TouchableWithoutFeedback>
-    // </View>
-    //   <StatusBar style="auto" />
-    // </SafeAreaView>
   );
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff"
-//     // paddingTop: Platform.OS === "android" ? 20 : 0
-//     // alignItems: "center",
-//     // justifyContent: "center"
-//   }
-// });
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    // paddingTop: Platform.OS === "android" ? 20 : 0
+    alignItems: "center",
+    justifyContent: "center"
+  }
+});

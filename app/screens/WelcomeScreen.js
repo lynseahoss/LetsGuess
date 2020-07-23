@@ -7,17 +7,24 @@ const welcomeScreen = (props)=>{
        source={require("./node_modules")}
        >
            <View style={styles.loginBtn}></View>
+           <View style={styles.registerBtn}></View>
        </ImageBackground>
     )
 }
         const styles = StyleSheet.create({
             background: {
                 flex: 1, //allows imageBackground to take entire screen
+                justifyContent='flex-end'
             },
             loginBtn: {
             width: "25%",
             height: 20,
-            backgroundColor: "yellowgreen"
+            backgroundColor: "turquoise"
+            },
+            registerBtn: {
+            width: "25%",
+            height: 20,
+            backgroundColor: "gold"
             }
         })
 

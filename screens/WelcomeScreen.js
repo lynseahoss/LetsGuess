@@ -1,10 +1,12 @@
 import React from 'react';
+import { ImageBackground, StyleSheet} from 'react-native';
 const welcomeScreen = (props)=>{
     return(
-        <div>
-
-        </div>
+       <ImageBackground></ImageBackground>
     )
+    const styles = StyleSheet.create({
+        
+    })
 }
 
 export default welcomeScreen

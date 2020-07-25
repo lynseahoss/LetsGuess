@@ -23,10 +23,17 @@ const styles = StyleSheet.create({
     backgroundColor: colors.turquoise,
     position: "absolute",
     top: 40,
-    left: 30
+    left: 30,
+    borderColor: colors.gold,
+    borderRadius: 10,
+    shadowColor: "grey",
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 1,
+    shadowRadius: 10,
+    elevation: 20
   },
   container: {
-    backgroundColor: colors.black,
+    backgroundColor: colors.white,
     flex: 1
   },
   deleteIcon: {
@@ -37,8 +44,13 @@ const styles = StyleSheet.create({
     top: 40,
     right: 30,
     borderWidth: 2,
-    borderColor: colors.turquoise,
-    borderRadius: 10
+    borderColor: colors.gold,
+    borderRadius: 10,
+    shadowColor: "grey",
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 1,
+    shadowRadius: 10,
+    elevation: 20
   },
   image: {
     width: "100%",

@@ -5,13 +5,13 @@ import colors from "../config/colors";
 
 const ViewImageScreen = props => {
   return (
-    <View style={style.container}>
-      <View style={style.closeIcon}></View>
-      <View style={style.deleteIcon}></View>
+    <View style={styles.container}>
+      <View style={styles.closeIcon}></View>
+      <View style={styles.deleteIcon}></View>
       <Image
         resizeMode="contain"
         style={styles.image}
-        source={"./assets/LetsGuessHomeImg.png"}
+        source={"../assets/LetsGuessHomeImg.png"}
       />
     </View>
   );
@@ -35,7 +35,10 @@ const styles = StyleSheet.create({
     backgroundColor: colors.gold,
     position: "absolute",
     top: 40,
-    right: 30
+    right: 30,
+    borderWidth: 2,
+    borderColor: colors.turquoise,
+    borderRadius: 10
   },
   image: {
     width: "100%",

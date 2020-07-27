@@ -18,6 +18,7 @@ const ViewImageScreen = props => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   gameIcon: {
     width: 50,
@@ -60,15 +61,17 @@ const styles = StyleSheet.create({
     top: -60
   },
   message: {
+    color: "white",
     position: "absolute",
     bottom: 40,
     right: 35,
     zIndex: 20
   },
   rocket: {
+    color: "white",
     position: "absolute",
     bottom: 40,
-    left: 172,
+    left: 173,
     zIndex: 20
   }
 });

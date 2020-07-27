@@ -3,15 +3,15 @@ import { Image, StyleSheet, View } from "react-native";
 
 import colors from "../config/colors";
 
-const ViewImageScreen = props => {
+const ViewImageScreen = () => {
   return (
-    <View style={style.container}>
-      <View style={style.closeIcon}></View>
-      <View style={style.deleteIcon}></View>
+    <View style={styles.container}>
+      <View style={styles.closeIcon}></View>
+      <View style={styles.deleteIcon}></View>
       <Image
         resizeMode="contain"
         style={styles.image}
-        source={"./assets/LetsGuessHomeImg.png"}
+        source={"../assets/LetsGuessHomeImg.png"}
       />
     </View>
   );

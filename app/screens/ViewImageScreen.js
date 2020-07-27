@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.turquoise,
     position: "absolute",
     bottom: 40,
-    left: 30,
+    left: 170,
     borderColor: colors.gold,
     borderRadius: 10,
     shadowColor: "grey",

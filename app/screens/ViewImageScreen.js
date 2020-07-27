@@ -1,23 +1,25 @@
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
-
+import { AntDesign } from "@expo/vector-icons";
 import colors from "../config/colors";
 
 const ViewImageScreen = props => {
   return (
     <View style={styles.container}>
-      <View style={styles.closeIcon}></View>
+      <AntDesign name="rocket1" size={40} style={styles.rocket} />
+      <View style={styles.gameIcon}></View>
+      <AntDesign name="message1" size={40} style={styles.message} />
       <View style={styles.deleteIcon}></View>
       <Image
         resizeMode="contain"
         style={styles.image}
-        source={"../assets/LetsGuessHomeImg.png"}
+        source={require("../assets/LetsGuessHomeImg.png")}
       />
     </View>
   );
 };
 const styles = StyleSheet.create({
-  closeIcon: {
+  gameIcon: {
     width: 50,
     height: 50,
     backgroundColor: colors.turquoise,
@@ -54,7 +56,20 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: "100%"
+    height: "100%",
+    top: -60
+  },
+  message: {
+    position: "absolute",
+    bottom: 40,
+    right: 35,
+    zIndex: 20
+  },
+  rocket: {
+    position: "absolute",
+    bottom: 40,
+    left: 172,
+    zIndex: 20
   }
 });
 export default ViewImageScreen;

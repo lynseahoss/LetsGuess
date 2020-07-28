@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
-    top: -60
+    top: -150
   },
   message: {
     color: "white",

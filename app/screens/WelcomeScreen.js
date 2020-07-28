@@ -1,52 +1,34 @@
 import React from "react";
-import { ImageBackground, StyleSheet, View, Image, Text } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 
-const WelcomeScreen = props => {
+import colors from "../config/colors";
+import LoginButton from "../components/Buttons/LoginButton";
+import SignupButton from "../components/Buttons/SignupButton";
+
+const ViewImageScreen = props => {
   return (
-    <ImageBackground
-      style={styles.background}
-      source={require("./app/assets/LetsGuessHomeImg.png")}
-    >
-      <View style={styles.logoContainer}>
-        {/* logo in image tag */}
-        <Image
-          style={styles.logo}
-          source={require("./app/assets/mainPigeon.png")}
-        />
-        <Text>Guess that Character</Text>
-      </View>
-      <View style={styles.loginBtn}></View>
-      <View style={styles.registerBtn}></View>
-    </ImageBackground>
+    <View style={styles.container}>
+      <LoginButton title="login" onPress={() => console.log("login")} />
+      <SignupButton title="signup" onPress={() => console.log("signup")} />
+      <Image
+        resizeMode="contain"
+        style={styles.image}
+        source={require("../assets/LetsGuessHomeImg.png")}
+      />
+    </View>
   );
 };
+
 const styles = StyleSheet.create({
-  background: {
-    //flex:1, allows imageBackground to take entire screen
+  container: {
+    backgroundColor: colors.white,
+    flex: 1
+  },
+
+  image: {
     width: "100%",
-    height: 20,
-    justifyContent: "flex-end",
-    alignItems: "center"
-  },
-  loginBtn: {
-    width: "25%",
-    height: 20,
-    backgroundColor: "turquoise"
-  },
-  logo: {
-    width: 100,
-    height: 100
-  },
-  logoContainer: {
-    position: "absolute",
-    top: 70,
-    alignItems: "center"
-  },
-  registerBtn: {
-    width: "25%",
-    height: 20,
-    backgroundColor: "gold"
+    height: "100%",
+    top: -150
   }
 });
-
-export default WelcomeScreen;
+export default ViewImageScreen;

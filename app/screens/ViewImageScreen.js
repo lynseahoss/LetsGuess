@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
-import { AntDesign } from "@expo/vector-icons";
+
 import colors from "../config/colors";
 import LoginButton from "../components/Buttons/LoginButton";
 import SignupButton from "../components/Buttons/SignupButton";

@@ -12,7 +12,7 @@ function Card({ title, subTitle, image }) {
         <View style={styles.detailContainer}>
           <AppText style={styles.title}>{title}</AppText>
         </View>
-        <View style={styles.detailContainer}>
+        <View style={styles.detailContainer2}>
           <AppText style={styles.subTitle}>{subTitle}</AppText>
         </View>
       </View>
@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     backgroundColor: colors.pink,
     marginBottom: 20,
-    padding: 10
+    padding: 10,
+    width: "50%"
   },
   card1: {
     borderRadius: 15,
@@ -38,9 +39,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   detailContainer2: {
-    padding: 10,
-    justifyContent: "center",
-    alignItems: "center"
+    padding: 5
   },
   image: {
     width: "100%",

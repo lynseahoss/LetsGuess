@@ -10,8 +10,10 @@ function Card({ title, subTitle, image }) {
       <View style={styles.card1}>
         <Image style={styles.image} source={image} />
         <View style={styles.detailContainer}>
-          <AppText>{title}</AppText>
-          <AppText>{subTitle}</AppText>
+          <AppText style={styles.title}>{title}</AppText>
+        </View>
+        <View style={styles.detailContainer}>
+          <AppText style={styles.subTitle}>{subTitle}</AppText>
         </View>
       </View>
     </View>
@@ -28,17 +30,27 @@ const styles = StyleSheet.create({
   card1: {
     borderRadius: 15,
     backgroundColor: colors.white,
-
     padding: 10
   },
   detailContainer: {
-    padding: 20
+    padding: 10,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  detailContainer2: {
+    padding: 10,
+    justifyContent: "center",
+    alignItems: "center"
   },
   image: {
     width: "100%",
     height: 100,
     resizeMode: "contain",
     padding: 10
+  },
+
+  title: {
+    marginBottom: 10
   }
 });
 export default Card;

@@ -1,5 +1,6 @@
 import React from "react";
 import { ImageBackground, StyleSheet, View, Image, Text } from "react-native";
+
 const WelcomeScreen = props => {
   return (
     <ImageBackground

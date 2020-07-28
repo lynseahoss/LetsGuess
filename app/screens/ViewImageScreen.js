@@ -2,10 +2,12 @@ import React from "react";
 import { Image, StyleSheet, View } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import colors from "../config/colors";
+import AppButton from "../components/Buttons/AppButton";
 
 const ViewImageScreen = props => {
   return (
     <View style={styles.container}>
+      <AppButton title="login" />
       <AntDesign name="rocket1" size={40} style={styles.rocket} />
       <View style={styles.gameIcon}></View>
       <AntDesign name="message1" size={40} style={styles.message} />

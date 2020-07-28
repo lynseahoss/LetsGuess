@@ -5,7 +5,7 @@ import colors from "../config/colors";
 import LoginButton from "../components/Buttons/LoginButton";
 import SignupButton from "../components/Buttons/SignupButton";
 
-const ViewImageScreen = props => {
+const WelcomeScreen = props => {
   return (
     <View style={styles.container}>
       <LoginButton title="login" onPress={() => console.log("login")} />
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
     top: -150
   }
 });
-export default ViewImageScreen;
+export default WelcomeScreen;

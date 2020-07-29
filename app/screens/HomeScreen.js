@@ -1,26 +1,31 @@
-import * as React from "react";
-import { View, Text } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import React from "react";
+import { SafeAreaView } from "react-native";
+import {
+  BottomNavigationTab,
+  Button,
+  Divider,
+  Layout,
+  Text,
+  TopNavigation
+} from "@ui-kitten/components";
 
-function HomeScreen() {
+export const HomeScreen = ({ navigation }) => {
+  const navigateDetails = () => {
+    navigation.navigate("Details");
+  };
+
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Home Screen</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <TopNavigation title="Let's Guess" alignment="center" />
+      <Divider />
+      <Layout
+        style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+      >
+        <Button onPress={navigateDetails}>OPEN DETAILS</Button>
+      </Layout>
+      <BottomNavigationTab
+        title={evaProps => <Text {...evaProps}>USERS</Text>}
+      />
+    </SafeAreaView>
   );
-}
-
-const Stack = createStackNavigator();
-
-function Home() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
-
-export default Home;
+};

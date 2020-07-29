@@ -10,8 +10,8 @@ import {
 } from "@ui-kitten/components";
 
 export const HomeScreen = ({ navigation }) => {
-  const navigateDetails = () => {
-    navigation.navigate("Details");
+  const navigateCharacters = () => {
+    navigation.navigate("Characters");
   };
 
   return (
@@ -21,7 +21,7 @@ export const HomeScreen = ({ navigation }) => {
       <Layout
         style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
       >
-        <Button onPress={navigateDetails}>OPEN DETAILS</Button>
+        <Button onPress={navigateCharacters}>View Characters</Button>
       </Layout>
       <BottomNavigationTab
         title={evaProps => <Text {...evaProps}>USERS</Text>}

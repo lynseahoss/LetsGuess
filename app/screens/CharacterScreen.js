@@ -32,7 +32,7 @@ export const CharacterScreen = ({ navigation }) => {
         accessoryLeft={BackAction}
       />
       <Divider />
-      <Layout style={{ flex: 1 }}>
+      <Layout style={{ flex: 1, justifyContent: "absolute" }}>
         <View style={styles.container1}>
           <Card
             title="Sprinkles"

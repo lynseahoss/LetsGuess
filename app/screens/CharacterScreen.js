@@ -27,7 +27,7 @@ export const CharacterScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <TopNavigation
-        title="MyApp"
+        title="Characters"
         alignment="center"
         accessoryLeft={BackAction}
       />

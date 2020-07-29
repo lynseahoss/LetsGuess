@@ -1,5 +1,6 @@
 import React from "react";
 import { SafeAreaView } from "react-native";
+
 import {
   BottomNavigationTab,
   Button,

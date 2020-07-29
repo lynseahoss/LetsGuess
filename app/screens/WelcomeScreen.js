@@ -5,7 +5,10 @@ import colors from "../config/colors";
 import LoginButton from "../components/Buttons/LoginButton";
 import SignupButton from "../components/Buttons/SignupButton";
 
-const WelcomeScreen = props => {
+const WelcomeScreen = ({ navigation }) => {
+  const navigateDetails = () => {
+    navigation.navigate("Details");
+  };
   return (
     <View style={styles.container}>
       <LoginButton title="login" onPress={() => console.log("login")} />

@@ -45,17 +45,15 @@ function ViewImageScreen({ title, subTitle, image }) {
 
 const styles = StyleSheet.create({
   container1: {
-    // backgroundColor: colors.white,
     flex: 1,
-    padding: 29,
+    padding: 20,
     paddingTop: 100
   },
   container2: {
-    // backgroundColor: colors.white,
     flex: 1,
-    padding: 29,
+    padding: 20,
     top: -410,
-    left: 200
+    left: 195
   }
 });
 export default ViewImageScreen;

@@ -50,18 +50,22 @@
 // }
 // export default App;
 
-import React from "react";
+import React, {useEffect} from "react";
 import * as eva from "@eva-design/eva";
 import "react-native-gesture-handler";
 import { ApplicationProvider, IconRegistry } from "@ui-kitten/components";
 import { EvaIconsPack } from "@ui-kitten/eva-icons";
 import { AppNavigator } from "./app/components/Navigation";
+import SplashScreen from 'react-native-splash-screen'
 
-export default () => (
-  <>
+const App = () => {
+
+  return(<>
     <IconRegistry icons={EvaIconsPack} />
     <ApplicationProvider {...eva} theme={eva.dark}>
       <AppNavigator />
     </ApplicationProvider>
-  </>
-);
+  </>)
+};
+
+export default App

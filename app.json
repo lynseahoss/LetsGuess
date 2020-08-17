@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "LetsGuess",
-    "slug": "LetsGuess",
+    "name": "Let's Guess",
+    "slug": "Let's Guess",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
     "splash": {
-      "image": "./app/assets/splash.png",
+      "image": "./app/assets/LetsGuessHomeImg.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
